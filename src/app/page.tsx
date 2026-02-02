@@ -22,6 +22,13 @@ const properties = [
     type: "Commercial Real Estate",
     image: "/images/ketchum-downtown.jpg",
   },
+  {
+    name: "Hailey Airport Investments",
+    description: "Aviation infrastructure holdings at Friedman Memorial Airport, the gateway to Sun Valley. Modern hangar facilities serving the region's growing private aviation community.",
+    location: "Hailey, Idaho",
+    type: "Aviation",
+    image: "/images/hailey-airport.jpg",
+  },
 ];
 
 export default function Home() {
