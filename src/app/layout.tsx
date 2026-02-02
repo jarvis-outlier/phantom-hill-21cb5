@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Phantom Hill | Idaho Investment Portfolio",
+  title: "Phantom Hill | Investing in Idaho",
   description: "Private investment entity focused on hospitality, ranch, and real estate holdings in Idaho's Sun Valley and Sawtooth Valley regions.",
   keywords: ["Idaho", "Sun Valley", "investment", "real estate", "Sawtooth Valley", "ranch"],
 };

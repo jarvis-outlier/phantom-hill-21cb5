@@ -56,7 +56,7 @@ export default function Home() {
             Phantom Hill
           </h1>
           <p className="text-xl md:text-2xl font-light text-white/90 max-w-2xl">
-            Idaho Investment Portfolio
+            Investing in Idaho
           </p>
           <div className="mt-6 h-px w-24 bg-amber-500" />
         </div>
