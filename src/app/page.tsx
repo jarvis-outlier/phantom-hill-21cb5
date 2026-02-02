@@ -157,8 +157,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div>
-              <h3 className="text-white text-xl font-light mb-2">Phantom Hill</h3>
-              <p className="text-sm">Sun Valley, Idaho</p>
+              <h3 className="text-white text-xl font-light mb-3">Phantom Hill</h3>
+              <p className="text-sm leading-relaxed">
+                491 Main St<br />
+                Ste 305<br />
+                Ketchum, ID 83340
+              </p>
             </div>
             <div className="mt-6 md:mt-0 text-sm">
               © {new Date().getFullYear()} Phantom Hill Capital. All rights reserved.
