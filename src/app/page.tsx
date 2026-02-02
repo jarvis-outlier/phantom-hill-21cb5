@@ -16,7 +16,7 @@ const properties = [
     image: "/images/smiley-creek.jpg",
   },
   {
-    name: "491 S Main Street",
+    name: "491 Main St",
     description: "A prime commercial property in the heart of downtown Ketchum, steps from world-class dining, galleries, and the base of Sun Valley Resort. Strategic positioning in one of America's most coveted mountain towns.",
     location: "Ketchum, Idaho",
     type: "Commercial Real Estate",
