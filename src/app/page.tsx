@@ -29,6 +29,13 @@ const properties = [
     type: "Aviation",
     image: "/images/hailey-airport.jpg",
   },
+  {
+    name: "Historic Mining Inholdings",
+    description: "Private land parcels within the Sawtooth National Forest, originating from historic mining claims. These rare inholdings offer wilderness access and development potential surrounded by protected federal lands.",
+    location: "Sawtooth National Forest, Idaho",
+    type: "Land",
+    image: "/images/mining-inholdings.jpg",
+  },
 ];
 
 export default function Home() {
