@@ -2,44 +2,54 @@ import Image from "next/image";
 
 const properties = [
   {
-    name: "Smiley Creek Lodge",
-    description: "A historic Idaho lodge nestled in the heart of the Sawtooth Valley. Offering rustic accommodations, dining, and access to some of Idaho's most pristine wilderness.",
-    location: "Sawtooth Valley, Idaho",
-    type: "Hospitality",
-  },
-  {
     name: "Busterback Ranch",
-    description: "An iconic working ranch in the Sawtooth Valley, spanning thousands of acres of pristine Idaho landscape. A legacy property with rich history and natural beauty.",
+    description: "An iconic 80-acre working ranch in the Sawtooth Valley. The 1940s-era property features a stunning main lodge, Ralph Lauren-inspired guest cabins, and sweeping views of the Sawtooth Mountains and White Cloud Wilderness.",
     location: "Sawtooth Valley, Idaho", 
     type: "Ranch",
+    image: "/images/bust3.jpg",
+  },
+  {
+    name: "Smiley Creek Lodge",
+    description: "A historic Idaho lodge nestled in the heart of the Sawtooth Valley. Offering rustic accommodations, dining, and access to some of Idaho's most pristine wilderness. Minutes from Busterback Ranch.",
+    location: "Sawtooth Valley, Idaho",
+    type: "Hospitality",
+    image: "/images/bust4.jpg",
   },
   {
     name: "Sun Valley Area Holdings",
-    description: "A curated portfolio of real estate investments in and around the Sun Valley area, including residential, commercial, and land holdings.",
+    description: "A curated portfolio of real estate investments in and around the Sun Valley area, including residential, commercial, and land holdings in one of America's premier mountain destinations.",
     location: "Sun Valley Region, Idaho",
     type: "Real Estate",
+    image: "/images/bust5.jpg",
   },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-stone-50">
-      {/* Hero Section */}
-      <header className="relative bg-stone-900 text-white">
-        <div className="absolute inset-0 bg-gradient-to-b from-stone-900/90 to-stone-900/70" />
-        <div className="relative max-w-6xl mx-auto px-6 py-32 md:py-48">
-          <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6">
+      {/* Hero Section with Background Image */}
+      <header className="relative h-screen min-h-[600px]">
+        <Image
+          src="/images/busterback-hero.jpg"
+          alt="Busterback Ranch at sunset with Sawtooth Mountains"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+        <div className="relative h-full flex flex-col justify-end max-w-6xl mx-auto px-6 pb-24">
+          <h1 className="text-5xl md:text-7xl font-light tracking-tight text-white mb-4">
             Phantom Hill
           </h1>
-          <p className="text-xl md:text-2xl font-light text-stone-300 max-w-2xl">
+          <p className="text-xl md:text-2xl font-light text-white/90 max-w-2xl">
             Idaho Investment Portfolio
           </p>
-          <div className="mt-8 h-px w-24 bg-amber-600" />
+          <div className="mt-6 h-px w-24 bg-amber-500" />
         </div>
       </header>
 
       {/* About Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 py-24">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-light text-stone-800 mb-6">
             Investing in Idaho&apos;s Future
@@ -54,24 +64,32 @@ export default function Home() {
       </section>
 
       {/* Properties Section */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-light text-stone-800 mb-12">
+          <h2 className="text-3xl font-light text-stone-800 mb-16">
             Portfolio
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {properties.map((property) => (
               <div 
                 key={property.name}
-                className="group bg-stone-50 p-8 hover:bg-stone-100 transition-colors duration-300"
+                className="group"
               >
+                <div className="relative h-64 mb-6 overflow-hidden">
+                  <Image
+                    src={property.image}
+                    alt={property.name}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
                 <div className="text-sm text-amber-700 font-medium mb-2">
                   {property.type}
                 </div>
-                <h3 className="text-2xl font-light text-stone-800 mb-4">
+                <h3 className="text-2xl font-light text-stone-800 mb-3">
                   {property.name}
                 </h3>
-                <p className="text-stone-600 mb-4 leading-relaxed">
+                <p className="text-stone-600 mb-3 leading-relaxed">
                   {property.description}
                 </p>
                 <div className="text-sm text-stone-500">
