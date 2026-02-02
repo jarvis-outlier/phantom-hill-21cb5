@@ -10,17 +10,17 @@ const properties = [
   },
   {
     name: "Smiley Creek Lodge",
-    description: "A historic Idaho lodge nestled in the heart of the Sawtooth Valley. Offering rustic accommodations, dining, and access to some of Idaho's most pristine wilderness. Minutes from Busterback Ranch.",
-    location: "Sawtooth Valley, Idaho",
+    description: "A beloved roadside landmark featuring a cafe, general store, cabins, and RV park at the gateway to the Sawtooth Wilderness. A gathering place for adventurers since the 1920s.",
+    location: "Sawtooth City, Idaho",
     type: "Hospitality",
-    image: "/images/bust4.jpg",
+    image: "/images/smiley-creek.jpg",
   },
   {
-    name: "Sun Valley Area Holdings",
-    description: "A curated portfolio of real estate investments in and around the Sun Valley area, including residential, commercial, and land holdings in one of America's premier mountain destinations.",
-    location: "Sun Valley Region, Idaho",
-    type: "Real Estate",
-    image: "/images/bust5.jpg",
+    name: "491 S Main Street",
+    description: "A prime commercial property in the heart of downtown Ketchum, steps from world-class dining, galleries, and the base of Sun Valley Resort. Strategic positioning in one of America's most coveted mountain towns.",
+    location: "Ketchum, Idaho",
+    type: "Commercial Real Estate",
+    image: "/images/ketchum-downtown.jpg",
   },
 ];
 
