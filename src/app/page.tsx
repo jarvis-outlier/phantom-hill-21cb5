@@ -36,6 +36,13 @@ const properties = [
     type: "Land",
     image: "/images/mining-inholdings.jpg",
   },
+  {
+    name: "Ketchum Employee Housing",
+    description: "Quality workforce housing in Sun Valley's core. Addressing the critical need for local employee accommodations in one of America's most desirable—and expensive—mountain communities.",
+    location: "Ketchum, Idaho",
+    type: "Residential",
+    image: "/images/employee-housing.jpg",
+  },
 ];
 
 export default function Home() {
