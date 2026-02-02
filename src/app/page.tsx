@@ -122,6 +122,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Owner Bio Section */}
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-96 overflow-hidden rounded-lg">
+            <Image
+              src="/images/david-tedesco.jpg"
+              alt="David Tedesco"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-3xl font-light text-stone-800 mb-6">
+              David Tedesco
+            </h2>
+            <p className="text-lg text-stone-600 leading-relaxed mb-4">
+              David is an entrepreneur, pilot, and outdoor enthusiast who fell in love with 
+              Idaho&apos;s Sawtooth Valley over two decades ago. As founder and CEO of Outlier, 
+              one of the largest private companies in the United States, he brings a long-term 
+              perspective to building and preserving special places.
+            </p>
+            <p className="text-lg text-stone-600 leading-relaxed">
+              Through Phantom Hill, David is committed to thoughtful stewardship of Idaho&apos;s 
+              most iconic properties—protecting their heritage while ensuring they remain 
+              vibrant parts of the community for generations to come.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-stone-900 text-stone-400 py-16">
         <div className="max-w-6xl mx-auto px-6">
